@@ -14,20 +14,43 @@
 //Console.WriteLine(max);
 
 
-int eded = 0;
 
-if (eded > 0)
+//int eded = 0;
+
+//if (eded > 0)
+//{
+//    while (eded % 2 == 0)
+//    {
+//        eded /= 2;
+//    }
+//}
+//if (eded == 1)
+//{
+//    Console.WriteLine("2 nin quvvetidir");
+//}
+//else
+//{
+//    Console.WriteLine("2 nin quvveti deyil");
+//}
+
+
+
+int[] arr = { 55, 123, 4, 5, 3, 4 };
+int max = arr[0];
+int min = arr[0];
+
+for (int i = 1; i < arr.Length; i++)
 {
-    while (eded % 2 == 0)
+    if (arr[i] > max)
     {
-        eded /= 2;
+        max = arr[i];
     }
 }
-if (eded == 1)
+for (int j = 1; j < arr.Length; j++)
 {
-    Console.WriteLine("2 nin quvvetidir");
+    if (arr[j] < min)
+    {
+        min = arr[j];
+    }
 }
-else
-{
-    Console.WriteLine("2 nin quvveti deyil");
-}
+Console.WriteLine($"minimum ve maksimum ededin cemi: { min + max}");
