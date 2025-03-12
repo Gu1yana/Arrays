@@ -1,14 +1,33 @@
-﻿int num = 7891;
+﻿//int num = 7891;
 
-int max = 0;
-int x;
-while (num > 0)
+//int max = 0;
+//int x;
+//while (num > 0)
+//{
+//    x = num % 10;
+//    if (x > max)
+//    {
+//        max = x;
+//    }
+//    num /= 10;
+//}
+//Console.WriteLine(max);
+
+
+int eded = 0;
+
+if (eded > 0)
 {
-    x = num % 10;
-    if (x > max)
+    while (eded % 2 == 0)
     {
-        max = x;
+        eded /= 2;
     }
-    num /= 10;
 }
-Console.WriteLine(max);
+if (eded == 1)
+{
+    Console.WriteLine("2 nin quvvetidir");
+}
+else
+{
+    Console.WriteLine("2 nin quvveti deyil");
+}
